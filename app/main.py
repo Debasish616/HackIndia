@@ -5,8 +5,8 @@ from .database import engine
 from .models import Base
 
 app = FastAPI(
-    title="UniPe Auth Server",
-    description="This is the authentication server for UniPe. This will be used in all the UniPe services to authenticate the users.",
+    title="Auth Server",
+    description="This is a authentication server",
     version="0.1.0"
 )
 
@@ -18,4 +18,4 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the UniPe Auth Server"}
+    return {"message": "Welcome to the Auth Server"}
