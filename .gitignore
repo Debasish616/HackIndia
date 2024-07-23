@@ -48,3 +48,4 @@ coverage.xml
 
 # PyCharm
 .idea/
+.env
